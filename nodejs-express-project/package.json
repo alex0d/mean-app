@@ -13,7 +13,7 @@
     "rest",
     "api"
   ],
-  "author": "ilyin",
+  "author": "alex0d",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",

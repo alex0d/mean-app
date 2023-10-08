@@ -5,7 +5,7 @@ const cors = require("cors");
 const app = express();
 const routes = require('./app/routes/contact.routes');
 
-const HOST_PORT = process.env.HOST_PORT || 8080;
+const PORT = 80;
 root = "./";
 
 app.use(cors({
@@ -23,6 +23,6 @@ app.get('*', (req, res) => {
 });
 
 
-app.listen(HOST_PORT, () => {
-  console.log(`Server is running on port ${HOST_PORT}.`);
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}.`);
 });
