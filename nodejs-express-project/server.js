@@ -15,11 +15,11 @@ app.use(cors({
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.urlencoded({ extended: true }));
-app.use(express.static(path.join(root, 'dist/angular-14-crud-example')));
+app.use(express.static(path.join(root, './dist/angular-14-crud-example')));
 
 app.use('/api/contacts', routes);
 app.get('*', (req, res) => {
-  res.sendFile('dist/angular-14-crud-example/index.html', {root});
+  res.sendFile('./dist/angular-14-crud-example/index.html', {root});
 });
 
 
