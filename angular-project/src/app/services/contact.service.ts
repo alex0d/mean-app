@@ -3,9 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { Contact } from '../models/contact.model';
 
-const HOST = process.env['HOST_URL'] || 'http://localhost';
-const PORT = process.env['HOST_PORT'] || '8080';
-const baseUrl = `${HOST}:${PORT}/api/contacts`;
+const baseUrl = 'http://localhost:80/api/contacts';
 
 @Injectable({
   providedIn: 'root'

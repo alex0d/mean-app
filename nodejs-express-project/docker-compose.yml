@@ -1,11 +1,6 @@
 services:
-  angular:
-    build: ./angular-project
-    volumes:
-      - ./nodejs-express-project/dist:/app/dist
-
-  express:
-    build: ./nodejs-express-project
+  app:
+    build: .
     ports:
       - 80:80
     restart: on-failure
@@ -15,7 +10,5 @@ services:
   mongo:
     image: mongo:7.0
     restart: on-failure
-    ports:
-      - 27017:27017
     volumes:
       - ./data:/data/db
